@@ -14,39 +14,34 @@
         android:padding="16dp"
         android:gravity="center_horizontal">
 
-
-
-        <!-- View espaciador -->
         <TextView
             android:id="@+id/textView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:layout_marginBottom="45dp"
             android:textStyle="bold"
             android:textSize="25sp"
             android:textColor="@color/GreenBaby"
             android:text="Regístrate" />
 
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="48dp"/>  <!-- Espacio de 48dp -->
-
-        <!-- Campo de Correo Electrónico -->
+        <!-- Campo demail -->
         <EditText
             android:id="@+id/emailField"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="16dp"
+            android:layout_marginBottom="45dp"
             android:drawableLeft="@drawable/ic_email"
             android:hint="Correo electrónico"
             android:inputType="textEmailAddress"
             android:padding="12dp" />
 
-        <!-- Campo de Nombre de Usuario -->
+        <!-- Campo User name -->
         <EditText
             android:id="@+id/usernameField"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="16dp"
+            android:layout_marginBottom="45dp"
             android:drawableLeft="@drawable/ic_login"
             android:hint="Nombre de usuario"
             android:inputType="textPersonName"
@@ -57,14 +52,46 @@
             android:id="@+id/passwordField"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="24dp"
+            android:layout_marginBottom="45dp"
             android:drawableLeft="@drawable/ic_password"
             android:hint="Contraseña"
             android:inputType="textPassword"
             android:padding="12dp" />
 
+        <!-- Button sign up -->
+        <Button
+            android:id="@+id/registerButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:text="Registrarse"
+            android:padding="16dp"
+            android:layout_marginBottom="24dp"/>
+
+        <!-- Text login -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="¿Ya tiene una cuenta?"
+            android:textColor="@color/Gray"
+            android:layout_gravity="center"/>
+
+        <!-- link login -->
+        <TextView
+            android:id="@+id/loginLink"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="8dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:textColor="@android:color/holo_blue_dark"
+            android:textStyle="bold"
+            android:minWidth="48dp"
+            android:minHeight="48dp"
+            android:text="Iniciar sesión"
+            android:gravity="center" />
+
 
     </LinearLayout>
-
-
 </androidx.constraintlayout.widget.ConstraintLayout>
