@@ -10,7 +10,7 @@
     >
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/textViewTitle"
         android:layout_width="226dp"
         android:layout_height="74dp"
         android:text="Bienvendio a\n Paradise"
@@ -21,7 +21,7 @@
         tools:layout_editor_absoluteY="198dp" />
 
     <TextView
-        android:id="@+id/textView3"
+        android:id="@+id/textViewDescription"
         android:layout_width="285dp"
         android:layout_height="74dp"
         android:text="Ofreciendo a sus huéspedes\n una experiencia de\n vacaciones inolvidable."
@@ -32,7 +32,7 @@
         tools:layout_editor_absoluteY="328dp" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/btnStart"
         android:layout_width="261dp"
         android:layout_height="61dp"
         android:text="Comenzar"
