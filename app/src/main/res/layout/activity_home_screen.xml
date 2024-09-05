@@ -30,4 +30,15 @@
         android:textStyle="bold"
         tools:layout_editor_absoluteX="49dp"
         tools:layout_editor_absoluteY="328dp" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="261dp"
+        android:layout_height="61dp"
+        android:text="Comenzar"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:backgroundTint="#238C98"
+        tools:layout_editor_absoluteX="75dp"
+        tools:layout_editor_absoluteY="576dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>
