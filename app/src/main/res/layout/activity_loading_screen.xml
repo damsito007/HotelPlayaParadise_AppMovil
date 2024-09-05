@@ -5,6 +5,8 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Loading_screen">
+    tools:context=".Loading_screen"
+    android:background="#238C98"
+    >
 
 </androidx.constraintlayout.widget.ConstraintLayout>
