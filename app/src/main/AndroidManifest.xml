@@ -13,6 +13,15 @@
         android:theme="@style/Theme.HotelPlayaParadise_AppMovil"
         tools:targetApi="31">
         <activity
+            android:name=".HotelDetail"
+            android:exported="false" />
+        <activity
+            android:name=".Hoteldetail"
+            android:exported="false" />
+        <activity
+            android:name=".Hoteldetail"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
