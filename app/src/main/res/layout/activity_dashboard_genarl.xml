@@ -35,5 +35,55 @@
         app:srcCompat="@drawable/avatar"
         tools:layout_editor_absoluteX="327dp"
         tools:layout_editor_absoluteY="16dp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Numbers of Rooms"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="51dp"
+        tools:layout_editor_absoluteY="139dp" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Numbers of\n Customers"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="51dp"
+        tools:layout_editor_absoluteY="199dp" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="130dp"
+        android:layout_height="60dp"
+        app:srcCompat="@drawable/number_rooms"
+        tools:layout_editor_absoluteX="217dp"
+        tools:layout_editor_absoluteY="118dp" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Total customer\n in hotel"
+        android:textColor="#959AA7"
+        android:textSize="15dp"
+        tools:layout_editor_absoluteX="228dp"
+        tools:layout_editor_absoluteY="198dp" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="39dp"
+        android:layout_height="30dp"
+        android:text="350"
+        android:textColor="#344BFD"
+        android:textSize="19dp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="299dp"
+        tools:layout_editor_absoluteY="218dp" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
 
