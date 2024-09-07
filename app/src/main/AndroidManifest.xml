@@ -12,18 +12,20 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.HotelPlayaParadise_AppMovil"
         tools:targetApi="31">
+
+        <!-- Cambiamos Dashboard_Genarl para que sea la pantalla inicial -->
         <activity
             android:name=".Dashboard_Genarl"
-            android:exported="false" />
-        <activity
-            android:name=".MainActivity"
-            android:exported="true">
+            android:exported="false">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <activity
+            android:name=".MainActivity"
+            android:exported="true" />
     </application>
 
 </manifest>
