@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">HotelPlayaParadise_AppMovil</string>
+    <string name="growpercent">growpercent</string>
+    <string name="topappbar">topappbar</string>
+    <string name="grpah16">grpah16</string>
+    <string name="graph13">graph13</string>
+    <string name="footer_topbar">footer_topbar</string>
 </resources>
