@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">HotelPlayaParadise_AppMovil</string>
+    <string name="topnar">topnar</string>
+    <string name="wordmenu">WordMenu</string>
+    <string name="principalmenu">PrincipalMenu</string>
+    <string name="footer">footer</string>
 </resources>
