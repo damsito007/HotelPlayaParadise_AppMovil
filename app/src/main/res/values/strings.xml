@@ -4,4 +4,8 @@
     <string name="wordmenu">WordMenu</string>
     <string name="principalmenu">PrincipalMenu</string>
     <string name="footer">footer</string>
+    <string name="growpercent">growpercent</string>
+    <string name="graph16">graph16</string>
+    <string name="graph13">graph13</string>
+    <string name="footer2">footer</string>
 </resources>
