@@ -3,4 +3,8 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="GreenBaby">#238C98</color>
+<<<<<<< HEAD
+=======
+    <color name="Gray">#939185</color>
+>>>>>>> feat/add-register
 </resources>
