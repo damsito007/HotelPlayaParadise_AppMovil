@@ -61,5 +61,9 @@
     <string name="grpah16">grpah16</string>
     <string name="graph13">graph13</string>
     <string name="footer_topbar">footer_topbar</string>
->>>>>>> feature/Dashboard_Grow_Indicator
+    <string name="menuimagebutton">menuimagebutton</string>
+    <string name="bienvendio_a_n_paradise">Bienvendio a\n Paradise</string>
+    <string name="ofreciendo_a_sus_hu_spedes_n_una_experiencia_de_n_vacaciones_inolvidable">Ofreciendo a sus huéspedes\n una experiencia de\n vacaciones inolvidable.</string>
+    <string name="comenzar">Comenzar</string>
+    >>>>>>> feature/Dashboard_Grow_Indicator
 </resources>

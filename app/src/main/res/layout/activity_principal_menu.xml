@@ -18,6 +18,9 @@
             android:orientation="vertical"
             android:background="@android:color/white">
 
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
             <!-- Top App Bar (Representa la barra superior) -->
             <ImageView
                 android:id="@+id/imageView"
@@ -27,6 +30,18 @@
                 android:scaleType="centerCrop"
                 android:src="@drawable/top_app_bar" />
 
+            <ImageButton
+                android:id="@+id/menuButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="0dp"
+                android:layout_marginEnd="333dp"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:contentDescription="@string/menuimagebutton"
+                android:padding="15dp"
+                android:src="@drawable/state_layer" />
+            </RelativeLayout>
             <!-- Principal Menu (El contenido principal con ítems del menú como Dashboard, Catalogue, etc.) -->
 
             <!-- Footer (Representa la barra inferior con iconos de navegación) -->

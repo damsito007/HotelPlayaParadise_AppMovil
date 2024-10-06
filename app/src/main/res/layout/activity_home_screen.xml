@@ -5,7 +5,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Home_Screen"
+    tools:context=".HomeScreen"
     android:background="@drawable/pantalla_carga"
     >
 
@@ -13,32 +13,35 @@
         android:id="@+id/textViewTitle"
         android:layout_width="226dp"
         android:layout_height="74dp"
-        android:text="Bienvendio a\n Paradise"
+        android:text="@string/bienvendio_a_n_paradise"
         android:textColor="@color/white"
-        android:textSize="30dp"
+        android:textSize="30sp"
         android:textStyle="bold"
         tools:layout_editor_absoluteX="49dp"
-        tools:layout_editor_absoluteY="198dp" />
+        tools:layout_editor_absoluteY="198dp"
+        tools:ignore="MissingConstraints" />
 
     <TextView
         android:id="@+id/textViewDescription"
         android:layout_width="285dp"
         android:layout_height="74dp"
-        android:text="Ofreciendo a sus huéspedes\n una experiencia de\n vacaciones inolvidable."
+        android:text="@string/ofreciendo_a_sus_hu_spedes_n_una_experiencia_de_n_vacaciones_inolvidable"
         android:textColor="@color/white"
-        android:textSize="20dp"
+        android:textSize="20sp"
         android:textStyle="bold"
         tools:layout_editor_absoluteX="49dp"
-        tools:layout_editor_absoluteY="328dp" />
+        tools:layout_editor_absoluteY="328dp"
+        tools:ignore="MissingConstraints" />
 
     <Button
         android:id="@+id/btnStart"
         android:layout_width="261dp"
         android:layout_height="61dp"
-        android:text="Comenzar"
-        android:textSize="18dp"
+        android:text="@string/comenzar"
+        android:textSize="18sp"
         android:textStyle="bold"
         android:backgroundTint="#238C98"
         tools:layout_editor_absoluteX="75dp"
-        tools:layout_editor_absoluteY="576dp" />
+        tools:layout_editor_absoluteY="576dp"
+        tools:ignore="MissingConstraints" />
 </androidx.constraintlayout.widget.ConstraintLayout>

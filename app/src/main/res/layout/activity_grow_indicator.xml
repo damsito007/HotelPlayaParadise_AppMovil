@@ -19,14 +19,32 @@
             android:background="@android:color/white">
 
             <!-- Top App Bar (Representa la barra superior) -->
-            <ImageView
-                android:id="@+id/imageView"
+            <RelativeLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:contentDescription="@string/topappbar"
-                android:scaleType="centerCrop"
-                android:src="@drawable/top_app_bar" />
+                android:layout_height="wrap_content">
 
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/topappbar"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/top_app_bar" />
+
+                <ImageButton
+                    android:id="@+id/menuButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginEnd="333dp"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:contentDescription="@string/menuimagebutton"
+                    android:padding="15dp"
+                    android:src="@drawable/state_layer" />
+            </RelativeLayout>
+
+            <!-- Continuación del contenido -->
             <ImageView
                 android:id="@+id/imageView5"
                 android:layout_width="match_parent"
@@ -62,6 +80,7 @@
         </LinearLayout>
 
     </ScrollView>
+
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
