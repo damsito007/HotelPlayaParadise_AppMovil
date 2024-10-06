@@ -52,6 +52,9 @@
 >>>>>>> feat/add-Principal_Menu
             android:exported="false" />
         <activity
+            android:name=".Grow_Indicator"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
 =======

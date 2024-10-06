@@ -1,6 +1,7 @@
 <resources>
     <string name="app_name">HotelPlayaParadise_AppMovil</string>
 <<<<<<< HEAD
+<<<<<<< HEAD
     <string name="today_s">Today\'s</string>
     <string name="check_in">Check-In</string>
     <string name="_23">23</string>
@@ -54,4 +55,11 @@
     <string name="menu_slideshow">Slideshow</string>
 
 >>>>>>> feat/add-Principal_Menu
+=======
+    <string name="growpercent">growpercent</string>
+    <string name="topappbar">topappbar</string>
+    <string name="grpah16">grpah16</string>
+    <string name="graph13">graph13</string>
+    <string name="footer_topbar">footer_topbar</string>
+>>>>>>> feature/Dashboard_Grow_Indicator
 </resources>
