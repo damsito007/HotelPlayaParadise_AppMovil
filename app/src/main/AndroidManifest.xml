@@ -15,6 +15,7 @@
         <activity
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             android:name=".Home_Screen"
             android:exported="false" />
         <activity
@@ -25,6 +26,15 @@
 =======
             android:name=".register"
 >>>>>>> feat/add-register
+=======
+            android:name=".HotelDetail"
+            android:exported="false" />
+        <activity
+            android:name=".Hoteldetail"
+            android:exported="false" />
+        <activity
+            android:name=".Hoteldetail"
+>>>>>>> feat/add-hotel-details-view
             android:exported="false" />
         <activity
             android:name=".MainActivity"

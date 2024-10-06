@@ -4,7 +4,11 @@
     <color name="white">#FFFFFFFF</color>
     <color name="GreenBaby">#238C98</color>
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
     <color name="Gray">#939185</color>
 >>>>>>> feat/add-register
+=======
+    <color name="Blue">#344BFD</color>
+>>>>>>> feat/add-hotel-details-view
 </resources>

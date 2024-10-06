@@ -1,3 +1,32 @@
 <resources>
     <string name="app_name">HotelPlayaParadise_AppMovil</string>
+    <string name="today_s">Today\'s</string>
+    <string name="check_in">Check-In</string>
+    <string name="_23">23</string>
+    <string name="today_s1">Today\'s</string>
+    <string name="check_out">Check-Out</string>
+    <string name="_13">13</string>
+    <string name="total">Total</string>
+    <string name="in_hotel">In Hotel</string>
+    <string name="_60">60</string>
+    <string name="total2">Total</string>
+    <string name="available_room">Available room</string>
+    <string name="_10">10</string>
+    <string name="room_status">Room Status</string>
+    <string name="occupied_rooms">Occupied Rooms</string>
+    <string name="clean">Clean</string>
+    <string name="dirty">Dirty</string>
+    <string name="inspected">Inspected</string>
+    <string name="available_rooms">Available Rooms</string>
+    <string name="bienvenido">Bienvenido</string>
+    <string name="dashboard_detalles_hotel">DashBoard detalles Hotel</string>
+    <string name="overview">Overview</string>
+    <string name="show_day">Show: Day</string>
+    <string name="rooms">Rooms</string>
+    <string name="floor_status">Floor Status</string>
+    <string name="customers_feedback">Customers FeedBack</string>
+    <string name="_104">104</string>
+    <string name="room_cleaning_could_be_better_a203">Room cleaning could be better A203</string>
+    <string name="cristian">Cristian</string>
+    <string name="food_could_be_better_a201">Food could be better A201</string>
 </resources>
