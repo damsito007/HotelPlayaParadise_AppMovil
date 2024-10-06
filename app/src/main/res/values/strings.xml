@@ -1,7 +1,5 @@
 <resources>
     <string name="app_name">HotelPlayaParadise_AppMovil</string>
-<<<<<<< HEAD
-<<<<<<< HEAD
     <string name="today_s">Today\'s</string>
     <string name="check_in">Check-In</string>
     <string name="_23">23</string>
@@ -31,7 +29,6 @@
     <string name="room_cleaning_could_be_better_a203">Room cleaning could be better A203</string>
     <string name="cristian">Cristian</string>
     <string name="food_could_be_better_a201">Food could be better A201</string>
-=======
     <string name="topnar">topnar</string>
     <string name="wordmenu">WordMenu</string>
     <string name="principalmenu">PrincipalMenu</string>
@@ -41,7 +38,6 @@
     <string name="graph13">graph13</string>
     <string name="footer2">footer</string>
     <string name="saleperformance">SalePerformance</string>
-    <string name="overview">Overview</string>
     <string name="title_activity_drawer_menu">Drawer_Menu</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
@@ -49,21 +45,14 @@
     <string name="nav_header_subtitle">android.studio@android.com</string>
     <string name="nav_header_desc">Navigation header</string>
     <string name="action_settings">Settings</string>
-
     <string name="menu_home">Home</string>
     <string name="menu_gallery">Gallery</string>
     <string name="menu_slideshow">Slideshow</string>
-
->>>>>>> feat/add-Principal_Menu
-=======
-    <string name="growpercent">growpercent</string>
     <string name="topappbar">topappbar</string>
     <string name="grpah16">grpah16</string>
-    <string name="graph13">graph13</string>
     <string name="footer_topbar">footer_topbar</string>
     <string name="menuimagebutton">menuimagebutton</string>
     <string name="bienvendio_a_n_paradise">Bienvendio a\n Paradise</string>
     <string name="ofreciendo_a_sus_hu_spedes_n_una_experiencia_de_n_vacaciones_inolvidable">Ofreciendo a sus huéspedes\n una experiencia de\n vacaciones inolvidable.</string>
     <string name="comenzar">Comenzar</string>
-    >>>>>>> feature/Dashboard_Grow_Indicator
 </resources>

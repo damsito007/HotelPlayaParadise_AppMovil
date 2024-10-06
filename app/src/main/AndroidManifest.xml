@@ -13,63 +13,50 @@
         android:theme="@style/Theme.HotelPlayaParadise_AppMovil"
         tools:targetApi="31">
 
-        <!-- Cambiamos Dashboard_Genarl para que sea la pantalla inicial -->
+        <!-- Cambiamos Dashboard_General para que sea la pantalla inicial -->
         <activity
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-            android:name=".Home_Screen"
-            android:exported="false" />
+            android:name=".Dashboard_Genarl"
+            android:exported="false"/>
+
+        <!-- Otras actividades de la aplicación -->
+        <activity
+            android:name=".HomeScreen"
+            android:exported="true">
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
+        </activity>
+
         <activity
             android:name=".Loading_screen"
-=======
+            android:exported="false" />
+
+        <activity
             android:name=".login"
->>>>>>> feat/add-login
-=======
+            android:exported="false" />
+
+        <activity
             android:name=".register"
->>>>>>> feat/add-register
-=======
+            android:exported="false" />
+
+        <activity
             android:name=".HotelDetail"
             android:exported="false" />
+
         <activity
-            android:name=".Hoteldetail"
-            android:exported="false" />
-        <activity
-            android:name=".Hoteldetail"
->>>>>>> feat/add-hotel-details-view
-=======
             android:name=".Drawer_Menu"
             android:exported="false"
             android:label="@string/title_activity_drawer_menu"
             android:theme="@style/Theme.HotelPlayaParadise_AppMovil.NoActionBar" />
-        <activity
-            android:name=".Dashboard_grow_indicator"
-            android:exported="false" />
-        <activity
+                <activity
             android:name=".Principal_Menu"
->>>>>>> feat/add-Principal_Menu
             android:exported="false" />
+
         <activity
             android:name=".Grow_Indicator"
             android:exported="false" />
-        <activity
-            android:name=".MainActivity"
-            android:exported="true">
-=======
-            android:name=".Dashboard_Genarl"
-            android:exported="false">
->>>>>>> feature/Dashboard_General
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
 
-        <activity
-            android:name=".MainActivity"
-            android:exported="true" />
     </application>
 
 </manifest>
