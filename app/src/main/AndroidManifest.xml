@@ -13,10 +13,14 @@
         android:theme="@style/Theme.HotelPlayaParadise_AppMovil"
         tools:targetApi="31">
         <activity
+<<<<<<< HEAD
             android:name=".Home_Screen"
             android:exported="false" />
         <activity
             android:name=".Loading_screen"
+=======
+            android:name=".login"
+>>>>>>> feat/add-login
             android:exported="false" />
         <activity
             android:name=".MainActivity"
