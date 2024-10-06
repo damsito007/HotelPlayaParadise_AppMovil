@@ -16,6 +16,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             android:name=".Home_Screen"
             android:exported="false" />
         <activity
@@ -35,6 +36,17 @@
         <activity
             android:name=".Hoteldetail"
 >>>>>>> feat/add-hotel-details-view
+=======
+            android:name=".Drawer_Menu"
+            android:exported="false"
+            android:label="@string/title_activity_drawer_menu"
+            android:theme="@style/Theme.HotelPlayaParadise_AppMovil.NoActionBar" />
+        <activity
+            android:name=".Dashboard_grow_indicator"
+            android:exported="false" />
+        <activity
+            android:name=".Principal_Menu"
+>>>>>>> feat/add-Principal_Menu
             android:exported="false" />
         <activity
             android:name=".MainActivity"
