@@ -27,4 +27,9 @@
         android:name="com.example.hotelplayaparadise_appmovil.Consulta1"
         android:label="fragment_consulta1"
         tools:layout="@layout/fragment_consulta1" />
+    <fragment
+        android:id="@+id/consulta2"
+        android:name="com.example.hotelplayaparadise_appmovil.Consulta2"
+        android:label="fragment_consulta2"
+        tools:layout="@layout/fragment_consulta2" />
 </navigation>

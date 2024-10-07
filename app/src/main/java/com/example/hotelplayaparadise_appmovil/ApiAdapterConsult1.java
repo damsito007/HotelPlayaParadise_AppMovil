@@ -39,7 +39,7 @@ public class ApiAdapterConsult1 extends RecyclerView.Adapter<ApiAdapterConsult1.
     public ApiViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         // Inflamos el layout del ítem
         View itemView = LayoutInflater.from(parent.getContext())
-                .inflate(R.layout.item_recyclerview, parent, false);
+                .inflate(R.layout.item_recyclerview_consult1, parent, false);
         return new ApiViewHolder(itemView);
     }
 
