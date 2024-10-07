@@ -17,4 +17,12 @@
             android:icon="@drawable/ic_menu_slideshow"
             android:title="@string/menu_slideshow" />
     </group>
+
+    <item android:title="">
+    <menu>
+        <item android:id="@+id/consulta1"
+            android:title="Consulta 1"
+            android:icon="@drawable/baseline_auto_graph_24"/>
+    </menu>
+    </item>
 </menu>
