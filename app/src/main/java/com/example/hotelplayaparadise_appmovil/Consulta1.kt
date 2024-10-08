@@ -39,7 +39,7 @@ class Consulta1 : Fragment() {
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
+    ): View {
         // Usamos ViewBinding para inflar el layout
         _binding = FragmentConsulta1Binding.inflate(inflater, container, false)
         val view = binding.root

@@ -12,7 +12,7 @@ import java.util.List;
 // Adaptador para RecyclerView en Java
 public class ApiAdapterConsult1 extends RecyclerView.Adapter<ApiAdapterConsult1.ApiViewHolder> {
 
-    private List<ApiConsulta1> dataList;
+    private final List<ApiConsulta1> dataList;
 
     // Constructor del adaptador, recibe la lista de datos
     public ApiAdapterConsult1(List<ApiConsulta1> dataList) {

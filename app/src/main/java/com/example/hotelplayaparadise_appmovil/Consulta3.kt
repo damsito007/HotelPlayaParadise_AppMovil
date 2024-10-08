@@ -62,7 +62,7 @@ class Consulta3 : Fragment() {
         setupRecyclerView()
 
         // Hacer la solicitud a la API al hacer clic en el botón
-        binding.ObtenerDatos.setOnClickListener(){
+        binding.ObtenerDatos.setOnClickListener {
             fetchDataFromApi()
         }
 
