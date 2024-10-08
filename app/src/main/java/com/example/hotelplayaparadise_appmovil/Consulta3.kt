@@ -74,13 +74,12 @@ class Consulta3 : Fragment() {
         adapter = ApiAdapterConsult3(dataList)  // Usa tu lista global
         binding.recyclerViewConsulta3.layoutManager = LinearLayoutManager(context)
         binding.recyclerViewConsulta3.adapter = adapter
-       // binding.recyclerView_consulta3.layoutManager = LinearLayoutManager(context)
-        //binding.recyclerView_consulta3.adapter = adapter
+
     }
 
     private fun fetchDataFromApi() {
         // URL de la API
-        val url = "https://api.example.com/data"
+        val url = "https://0fdkzrqz-5069.use.devtunnels.ms/diasOcupacion_Habitaciones_x_Temporada_and_clientes"
 
         // Hacemos la petición GET usando Fuel
         Fuel.get(url).responseString { _, _, result ->
