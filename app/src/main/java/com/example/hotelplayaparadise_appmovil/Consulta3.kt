@@ -1,10 +1,17 @@
 package com.example.hotelplayaparadise_appmovil
 
 import android.os.Bundle
+import android.util.Log
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Toast
+import androidx.recyclerview.widget.LinearLayoutManager
+import com.example.hotelplayaparadise_appmovil.databinding.FragmentConsulta3Binding
+import com.github.kittinunf.fuel.Fuel
+import com.github.kittinunf.result.Result
+import com.google.gson.Gson
 
 // TODO: Rename parameter arguments, choose names that match
 // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -21,6 +28,19 @@ class Consulta3 : Fragment() {
     private var param1: String? = null
     private var param2: String? = null
 
+    //	_binding es una variable privada que almacena el objeto de enlace
+    // para el diseño del fragmento (FragmentProductoRegionBinding).
+    private var _binding: FragmentConsulta3Binding? = null
+
+    // binding es una propiedad que expone ese objeto, asegurándose de que nunca sea nulo (usando !!).
+    private val binding get() = _binding!!
+
+    // Lista de datos para el RecyclerView
+    private val dataList = mutableListOf<DatosHotel>()
+
+    // Adapter para RecyclerView
+    private lateinit var adapter: ApiAdapterConsult3
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         arguments?.let {
@@ -29,13 +49,75 @@ class Consulta3 : Fragment() {
         }
     }
 
+
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
+    ): View {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_consulta3, container, false)
+        _binding = FragmentConsulta3Binding.inflate(inflater,container,false)
+        val view = binding.root
+
+        // Configurar RecyclerView
+        setupRecyclerView()
+
+        // Hacer la solicitud a la API al hacer clic en el botón
+        binding.ObtenerDatos.setOnClickListener(){
+            fetchDataFromApi()
+        }
+
+        return view
+    }//final del view
+
+    private fun setupRecyclerView() {
+        // Inicializamos el adaptador y configuramos el RecyclerView
+        adapter = ApiAdapterConsult3(dataList)  // Usa tu lista global
+        binding.recyclerViewConsulta3.layoutManager = LinearLayoutManager(context)
+        binding.recyclerViewConsulta3.adapter = adapter
+       // binding.recyclerView_consulta3.layoutManager = LinearLayoutManager(context)
+        //binding.recyclerView_consulta3.adapter = adapter
     }
+
+    private fun fetchDataFromApi() {
+        // URL de la API
+        val url = "https://api.example.com/data"
+
+        // Hacemos la petición GET usando Fuel
+        Fuel.get(url).responseString { _, _, result ->
+            when (result) {
+                is Result.Failure -> {
+                    // Manejar errores en la petición
+                    val ex = result.getException()
+                    Log.e("API_ERROR", "Error al hacer la solicitud: ${ex.message}")
+                    Toast.makeText(context, "Error al obtener datos", Toast.LENGTH_SHORT).show()
+                }
+                is Result.Success -> {
+                    // Procesar la respuesta JSON
+                    val data = result.get()
+                    Log.d("API_RESPONSE", "Respuesta de la API: $data")
+
+                    // Usamos Gson para convertir el JSON en una lista de ApiResponse
+                    try {
+                        val gson = Gson()
+                        val apiResponseList = gson.fromJson(data, Array<DatosHotel>::class.java).toList()
+
+                        // Limpiamos la lista y añadimos los nuevos datos
+                        dataList.clear()
+                        dataList.addAll(apiResponseList)
+
+                        // Notificamos al adaptador que los datos han cambiado
+                        adapter.notifyDataSetChanged()
+
+                        Toast.makeText(context, "Datos obtenidos exitosamente", Toast.LENGTH_SHORT).show()
+
+                    } catch (e: Exception) {
+                        Log.e("JSON_ERROR", "Error al convertir el JSON: ${e.message}")
+                        Toast.makeText(context, "Error al procesar los datos", Toast.LENGTH_SHORT).show()
+                    }
+                }
+            }
+        }
+    }//fin de la funcion
 
     companion object {
         /**
