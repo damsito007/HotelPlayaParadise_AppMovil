@@ -19,6 +19,7 @@
             android:exported="false"/>
 
         <!-- Otras actividades de la aplicación -->
+
         <activity
             android:name=".HomeScreen"
             android:exported="true">

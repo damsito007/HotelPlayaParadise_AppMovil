@@ -55,4 +55,8 @@
     <string name="bienvendio_a_n_paradise">Bienvendio a\n Paradise</string>
     <string name="ofreciendo_a_sus_hu_spedes_n_una_experiencia_de_n_vacaciones_inolvidable">Ofreciendo a sus huéspedes\n una experiencia de\n vacaciones inolvidable.</string>
     <string name="comenzar">Comenzar</string>
+    <string name="Consult_1">FirstsConsult</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="get_data">Get Data</string>
 </resources>
