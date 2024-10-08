@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    android:elevation="4dp">
+
+    <!-- Contenedor principal en vertical -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Título del Card -->
+        <TextView
+            android:id="@+id/textTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hotel Paradise"
+            android:textStyle="bold"
+            android:textSize="24sp"
+            android:fontFamily="serif"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_marginBottom="12dp"/>
+
+        <!-- Información de la habitación y temporada en horizontal -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <!-- Sección 1: Información de la Habitación -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/ic_hotel_room"
+                    android:layout_marginEnd="8dp"
+                    android:contentDescription="Icono de habitación" />
+
+                <TextView
+                    android:id="@+id/text_TipoHabitacion"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tipo de Habitación: Doble"
+                    android:textSize="16sp"
+                    android:textColor="@color/colorSecondary"
+                    android:fontFamily="sans-serif-light"
+                    android:layout_marginBottom="6dp"/>
+            </LinearLayout>
+
+            <!-- Sección 2: Temporada -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/ic_season"
+                    android:layout_marginEnd="8dp"
+                    android:contentDescription="Icono de temporada" />
+
+                <TextView
+                    android:id="@+id/textTemporada"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Temporada: Invierno"
+                    android:textSize="16sp"
+                    android:textColor="@color/colorSecondary"
+                    android:fontFamily="sans-serif-light"
+                    android:layout_marginBottom="6dp"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Nombre del cliente -->
+        <TextView
+            android:id="@+id/textNombre_Cliente"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cliente: Abdul"
+            android:textSize="16sp"
+            android:textColor="@color/colorPrimary"
+            android:fontFamily="sans-serif"
+            android:layout_marginTop="8dp"/>
+
+        <!-- Días de ocupación -->
+        <TextView
+            android:id="@+id/textDias_ocupacion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Días de ocupación: 178"
+            android:textSize="16sp"
+            android:textColor="@color/colorPrimary"
+            android:fontFamily="sans-serif"
+            android:layout_marginTop="4dp"/>
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

@@ -5,4 +5,12 @@
     <color name="GreenBaby">#238C98</color>
     <color name="Gray">#939185</color>
     <color name="Blue">#344BFD</color>
+
+    <color name="dark_background">#121212</color>
+    <color name="terror_text">#D32F2F</color>
+    <color name="list_background_dark">#1C1C1C</color>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorSecondary">#FF4081</color>
+    <color name="colorAccent">#FFC107</color>
 </resources>
