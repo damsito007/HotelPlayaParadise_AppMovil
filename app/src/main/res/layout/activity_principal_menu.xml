@@ -21,43 +21,36 @@
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
-            <!-- Top App Bar (Representa la barra superior) -->
-            <ImageView
-                android:id="@+id/imageView"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:contentDescription="@string/topnar"
-                android:scaleType="centerCrop"
-                android:src="@drawable/top_app_bar" />
+                <!-- Top App Bar (Representa la barra superior) -->
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/topnar"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/top_app_bar" />
 
-            <ImageButton
-                android:id="@+id/menuButton"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignParentEnd="true"
-                android:layout_marginTop="0dp"
-                android:layout_marginEnd="333dp"
-                android:background="?attr/selectableItemBackgroundBorderless"
-                android:contentDescription="@string/menuimagebutton"
-                android:padding="15dp"
-                android:src="@drawable/state_layer" />
+                <ImageButton
+                    android:id="@+id/menuButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginEnd="333dp"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:contentDescription="@string/menuimagebutton"
+                    android:padding="15dp"
+                    android:src="@drawable/state_layer" />
             </RelativeLayout>
-            <!-- Principal Menu (El contenido principal con ítems del menú como Dashboard, Catalogue, etc.) -->
+
+            <!-- Contenedor para cargar los Fragments -->
+            <FrameLayout
+                android:id="@+id/fragment_container"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
 
             <!-- Footer (Representa la barra inferior con iconos de navegación) -->
-            <ImageView
-                android:id="@+id/imageView2"
-                android:layout_width="match_parent"
-                android:layout_height="308dp"
-                android:contentDescription="@string/saleperformance"
-                app:srcCompat="@drawable/graph_13" />
-
-            <ImageView
-                android:id="@+id/imageView3"
-                android:layout_width="match_parent"
-                android:layout_height="297dp"
-                android:contentDescription="@string/overview"
-                app:srcCompat="@drawable/graph_16" />
 
             <ImageView
                 android:id="@+id/imageView4"
@@ -78,3 +71,4 @@
         app:menu="@menu/activity_main_drawer" />
 
 </androidx.drawerlayout.widget.DrawerLayout>
+

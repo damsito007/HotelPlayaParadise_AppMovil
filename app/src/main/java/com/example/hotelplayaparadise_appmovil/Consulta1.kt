@@ -7,6 +7,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
+import androidx.core.view.GravityCompat
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.hotelplayaparadise_appmovil.databinding.FragmentConsulta1Binding
@@ -36,6 +37,8 @@ class Consulta1 : Fragment() {
         }
     }
 
+
+
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
@@ -49,22 +52,28 @@ class Consulta1 : Fragment() {
 
         // Hacer la solicitud a la API al hacer clic en el botón
         binding.btnGetData.setOnClickListener {
+
             fetchDataFromApi()
         }
 
         return view
+
+
     }
+
+
 
     private fun setupRecyclerView() {
         // Inicializamos el adaptador y configuramos el RecyclerView
         adapter = ApiAdapterConsult1(dataList)  // Usa tu lista global
         binding.recyclerView.layoutManager = LinearLayoutManager(context)
         binding.recyclerView.adapter = adapter
+        binding.recyclerView.layoutManager = LinearLayoutManager(requireContext())
     }
 
     private fun fetchDataFromApi() {
         // URL de la API
-        val url = "https://api.example.com/data"
+        val url = "https://0fdkzrqz-5069.use.devtunnels.ms/diasOcupacion_Habitaciones_x_Temporada_and_clientes"
 
         // Hacemos la petición GET usando Fuel
         Fuel.get(url).responseString { _, _, result ->

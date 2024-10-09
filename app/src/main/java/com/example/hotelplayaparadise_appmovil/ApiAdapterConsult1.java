@@ -21,15 +21,17 @@ public class ApiAdapterConsult1 extends RecyclerView.Adapter<ApiAdapterConsult1.
 
     // Clase interna que representa el ViewHolder, que contiene las vistas de cada ítem
     public static class ApiViewHolder extends RecyclerView.ViewHolder {
-        TextView idTextView;
-        TextView nameTextView;
-        TextView ageTextView;
+        TextView TipoHabitacion;
+        TextView Temporada;
+        TextView NombreCliente;
+        TextView DiasOcupacion;
 
         public ApiViewHolder(@NonNull View itemView) {
             super(itemView);
-            idTextView = itemView.findViewById(R.id.item_id);
-            nameTextView = itemView.findViewById(R.id.item_name);
-            ageTextView = itemView.findViewById(R.id.item_age);
+            TipoHabitacion = itemView.findViewById(R.id.item_TipoHabitacion);
+            Temporada = itemView.findViewById(R.id.item_Temporada);
+            NombreCliente = itemView.findViewById(R.id.item_Nombre);
+            DiasOcupacion = itemView.findViewById(R.id.item_DiasOcupacion);
         }
     }
 
@@ -49,9 +51,10 @@ public class ApiAdapterConsult1 extends RecyclerView.Adapter<ApiAdapterConsult1.
         // Obtener el elemento de la lista en la posición actual y reemplazar el contenido de la vista
         ApiConsulta1 currentItem = dataList.get(position);
 
-        holder.idTextView.setText(String.valueOf(currentItem.getCount()));
-        holder.nameTextView.setText(currentItem.getName());
-        holder.ageTextView.setText(String.valueOf(currentItem.getAge()));
+        holder.TipoHabitacion.setText(currentItem.getTipoHabitacion());
+        holder.Temporada.setText(currentItem.getTemporada());
+        holder.NombreCliente.setText(currentItem.getNombreCliente());
+        holder.DiasOcupacion.setText(currentItem.getDiasOcupacion());
     }
 
     // Devuelve el tamaño de tu dataset (invocado por el layout manager)

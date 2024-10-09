@@ -7,6 +7,7 @@ import androidx.appcompat.app.ActionBarDrawerToggle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.GravityCompat
 import androidx.drawerlayout.widget.DrawerLayout
+import androidx.fragment.app.Fragment
 import com.example.hotelplayaparadise_appmovil.databinding.ActivityPrincipalMenuBinding
 import com.google.android.material.navigation.NavigationView
 
@@ -24,5 +25,27 @@ class Principal_Menu : AppCompatActivity() {
         binding.menuButton.setOnClickListener {
             binding.drawerLayout.openDrawer(GravityCompat.START)
         }
+
+        // Configurar el NavigationView
+        binding.navView.setNavigationItemSelectedListener { menuItem ->
+            when (menuItem.itemId) {
+
+                R.id.consulta1 -> {
+                    loadFragment(Consulta1()) // Cargar Consulta1Fragment
+                }
+            }
+            binding.drawerLayout.closeDrawer(GravityCompat.START) // Cerrar el menú
+            true
+        }
+
+
+    }
+
+    private fun loadFragment(fragment: Fragment) {
+        // Cambiar el fragmento
+        val transaction = supportFragmentManager.beginTransaction()
+        transaction.replace(R.id.fragment_container, fragment)
+        transaction.addToBackStack(null) // Agregar a la pila de retroceso
+        transaction.commit()
     }
 }

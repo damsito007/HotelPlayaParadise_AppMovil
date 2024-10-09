@@ -11,25 +11,32 @@
         tools:ignore="MissingConstraints">
 
         <TextView
-            android:id="@+id/item_id"
+            android:id="@+id/item_TipoHabitacion"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="ID"
+            android:text="Tipo de Habitacion:"
             android:textStyle="bold"
             android:textSize="16sp"/>
 
         <TextView
-            android:id="@+id/item_name"
+            android:id="@+id/item_Temporada"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Name"
+            android:text="Temporada:"
             android:textSize="16sp" />
 
         <TextView
-            android:id="@+id/item_age"
+            android:id="@+id/item_Nombre"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Age"
+            android:text="Nombre del Cliente:"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/item_DiasOcupacion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Dias de Ocupacio:"
             android:textSize="16sp" />
 
     </LinearLayout>

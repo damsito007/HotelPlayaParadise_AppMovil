@@ -5,43 +5,55 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".HomeScreen"
     android:background="@drawable/pantalla_carga"
-    >
+    tools:context=".HomeScreen">
 
+    <!-- Título -->
     <TextView
         android:id="@+id/textViewTitle"
-        android:layout_width="226dp"
-        android:layout_height="74dp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
         android:text="@string/bienvendio_a_n_paradise"
         android:textColor="@color/white"
-        android:textSize="30sp"
+        android:textSize="28sp"
         android:textStyle="bold"
-        tools:layout_editor_absoluteX="49dp"
-        tools:layout_editor_absoluteY="198dp"
-        tools:ignore="MissingConstraints" />
+        android:textAlignment="center"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/textViewDescription"
+        app:layout_constraintVertical_chainStyle="packed"
+        android:layout_marginHorizontal="32dp" />
 
+    <!-- Descripción -->
     <TextView
         android:id="@+id/textViewDescription"
-        android:layout_width="285dp"
-        android:layout_height="74dp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
         android:text="@string/ofreciendo_a_sus_hu_spedes_n_una_experiencia_de_n_vacaciones_inolvidable"
         android:textColor="@color/white"
-        android:textSize="20sp"
+        android:textSize="18sp"
         android:textStyle="bold"
-        tools:layout_editor_absoluteX="49dp"
-        tools:layout_editor_absoluteY="328dp"
-        tools:ignore="MissingConstraints" />
+        android:textAlignment="center"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewTitle"
+        app:layout_constraintBottom_toTopOf="@+id/btnStart"
+        android:layout_marginHorizontal="32dp" />
 
+    <!-- Botón Comenzar -->
     <Button
         android:id="@+id/btnStart"
-        android:layout_width="261dp"
-        android:layout_height="61dp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
         android:text="@string/comenzar"
         android:textSize="18sp"
         android:textStyle="bold"
         android:backgroundTint="#238C98"
-        tools:layout_editor_absoluteX="75dp"
-        tools:layout_editor_absoluteY="576dp"
-        tools:ignore="MissingConstraints" />
+        android:layout_marginHorizontal="48dp"
+        android:layout_marginBottom="80dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
