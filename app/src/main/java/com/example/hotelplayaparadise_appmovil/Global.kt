@@ -1,6 +1,13 @@
 package com.example.hotelplayaparadise_appmovil
 
-data class ApiConsulta1(val TipoHabitacion: String, val Temporada: String, val NombreCliente: String, val DiasOcupacion: Int)
+import com.google.gson.annotations.SerializedName
+
+data class ApiConsulta1(
+    @SerializedName("Tipo Habitacion") val tipoHabitacion: String,
+    @SerializedName("Temporada") val temporada: String,
+    @SerializedName("Nombre Clientes") val nombreClientes: String,
+    @SerializedName("Dias Ocupacion") val diasOcupacion: Int
+)
 
 // Lista global para almacenar los resultados
 var dataList: MutableList<ApiConsulta1> = mutableListOf()

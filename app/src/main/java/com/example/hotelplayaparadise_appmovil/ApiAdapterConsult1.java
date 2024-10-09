@@ -28,10 +28,10 @@ public class ApiAdapterConsult1 extends RecyclerView.Adapter<ApiAdapterConsult1.
 
         public ApiViewHolder(@NonNull View itemView) {
             super(itemView);
-            TipoHabitacion = itemView.findViewById(R.id.item_TipoHabitacion);
-            Temporada = itemView.findViewById(R.id.item_Temporada);
-            NombreCliente = itemView.findViewById(R.id.item_Nombre);
-            DiasOcupacion = itemView.findViewById(R.id.item_DiasOcupacion);
+            TipoHabitacion = itemView.findViewById(R.id.text_TipoHabitacion);
+            Temporada = itemView.findViewById(R.id.textTemporada);
+            NombreCliente = itemView.findViewById(R.id.textNombre_Cliente);
+            DiasOcupacion = itemView.findViewById(R.id.textDias_ocupacion);
         }
     }
 
@@ -51,10 +51,11 @@ public class ApiAdapterConsult1 extends RecyclerView.Adapter<ApiAdapterConsult1.
         // Obtener el elemento de la lista en la posición actual y reemplazar el contenido de la vista
         ApiConsulta1 currentItem = dataList.get(position);
 
-        holder.TipoHabitacion.setText(currentItem.getTipoHabitacion());
-        holder.Temporada.setText(currentItem.getTemporada());
-        holder.NombreCliente.setText(currentItem.getNombreCliente());
-        holder.DiasOcupacion.setText(currentItem.getDiasOcupacion());
+        holder.TipoHabitacion.setText("Tipo de Habitación: " + currentItem.getTipoHabitacion());
+        holder.Temporada.setText("Temporada: " + currentItem.getTemporada());
+        holder.NombreCliente.setText("Nombre del Cliente: " + currentItem.getNombreClientes());
+        holder.DiasOcupacion.setText("Días de Ocupación: " + currentItem.getDiasOcupacion());
+
     }
 
     // Devuelve el tamaño de tu dataset (invocado por el layout manager)

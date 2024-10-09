@@ -34,6 +34,7 @@ class Consulta1 : Fragment() {
         arguments?.let {
             param1 = it.getString(ARG_PARAM1)
             param2 = it.getString(ARG_PARAM2)
+
         }
     }
 
@@ -51,10 +52,10 @@ class Consulta1 : Fragment() {
         setupRecyclerView()
 
         // Hacer la solicitud a la API al hacer clic en el botón
-        binding.btnGetData.setOnClickListener {
 
-            fetchDataFromApi()
-        }
+
+        fetchDataFromApi()
+
 
         return view
 
@@ -68,15 +69,21 @@ class Consulta1 : Fragment() {
         adapter = ApiAdapterConsult1(dataList)  // Usa tu lista global
         binding.recyclerView.layoutManager = LinearLayoutManager(context)
         binding.recyclerView.adapter = adapter
-        binding.recyclerView.layoutManager = LinearLayoutManager(requireContext())
+
     }
 
     private fun fetchDataFromApi() {
+        // Muestra el ProgressBar
+        binding.progressBar.visibility = View.VISIBLE
+
         // URL de la API
         val url = "https://0fdkzrqz-5069.use.devtunnels.ms/diasOcupacion_Habitaciones_x_Temporada_and_clientes"
 
         // Hacemos la petición GET usando Fuel
         Fuel.get(url).responseString { _, _, result ->
+            // Oculta el ProgressBar al finalizar la solicitud
+            binding.progressBar.visibility = View.GONE
+
             when (result) {
                 is Result.Failure -> {
                     // Manejar errores en la petición
@@ -111,6 +118,7 @@ class Consulta1 : Fragment() {
             }
         }
     }
+
 
     override fun onDestroyView() {
         super.onDestroyView()

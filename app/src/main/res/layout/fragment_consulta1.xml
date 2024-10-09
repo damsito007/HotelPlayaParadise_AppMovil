@@ -11,22 +11,22 @@
         android:orientation="vertical"
         tools:ignore="UselessParent">
 
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_gravity="center"
+            android:visibility="gone"
+            android:indeterminateTint="@android:color/holo_green_light" />
+
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/recyclerView"
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="1"
             android:layout_marginTop="10sp"
-            tools:listitem="@layout/item_recyclerview_consult1"/> <!-- Ocupa el espacio restante -->
-
-        <Button
-        android:id="@+id/btnGetData"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/get_data"
-        android:layout_gravity="center"
-        android:padding="8dp"
-        android:layout_marginBottom="10sp"/>
+            tools:listitem="@layout/item_recyclerview_consult1"/>
 
     </LinearLayout>
 </FrameLayout>
+
