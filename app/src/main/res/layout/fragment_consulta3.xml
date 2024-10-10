@@ -5,24 +5,27 @@
     android:layout_height="match_parent"
     tools:context=".Consulta3">
 
-    <!-- RecyclerView -->
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/recyclerView_consulta3"
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginBottom="100dp"
-        android:scrollbars="vertical" />
+        android:orientation="vertical"
+        tools:ignore="UselessParent">
 
+        <ProgressBar
+            android:id="@+id/progressBarConsult2"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_gravity="center"
+            android:visibility="gone"
+            android:indeterminateTint="@android:color/holo_green_light" />
 
-    <Button
-        android:id="@+id/Obtener_Datos"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal|bottom"
-        android:layout_marginBottom="16dp"
-        android:text="Obtener datos"
-        android:elevation="4dp"
-        android:padding="12dp"
-        android:textSize="18sp" />
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerViewConsult3"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_marginTop="10sp"
+            tools:listitem="@layout/cardview_list_consulta3"/>
 
+    </LinearLayout>
 </FrameLayout>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    android:elevation="4dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textNombre_Cliente2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cliente: Abdul"
+            android:textSize="18sp"
+            android:textColor="@color/colorPrimary"
+            android:fontFamily="sans-serif"
+            android:layout_marginTop="8dp"
+            android:drawableStart="@drawable/baseline_person_24"
+            android:drawablePadding="8dp" />
+
+        <TextView
+            android:id="@+id/textDias_ocupacion2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Días de ocupación: 178"
+            android:textSize="18sp"
+            android:textColor="@color/colorPrimary"
+            android:fontFamily="sans-serif"
+            android:layout_marginTop="4dp"
+            android:drawableStart="@drawable/baseline_calendar_month_24"
+            />
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

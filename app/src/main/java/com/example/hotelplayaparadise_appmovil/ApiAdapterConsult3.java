@@ -11,28 +11,28 @@ import java.util.List;
 
 public class ApiAdapterConsult3 extends RecyclerView.Adapter<ApiAdapterConsult3.ApiViewHolder> {
 
-    private final List<DatosHotel> datosHotelList;
+    private final List<Apiconsulta3> datalist3;
 
     // Constructor del adaptador, recibe la lista de datos
-    public ApiAdapterConsult3(List<DatosHotel> datosHotelList) {
-        this.datosHotelList = datosHotelList;
+    public ApiAdapterConsult3(List<Apiconsulta3> dataList) {
+        this.datalist3 = dataList;
     }
 
     // Clase interna que representa el ViewHolder, que contiene las vistas de cada ítem
     public static class ApiViewHolder extends RecyclerView.ViewHolder {
-        TextView textTipoHabitacion;
-        TextView textTemporada;
+        TextView textMetodoReservacion;
         TextView textNombreCliente;
-        TextView textDiasOcupacion;
-        TextView textTitle;
+        TextView txtNumMes;
+        TextView txtPrecioNoche;
+        TextView textPrecioPaquete;
 
         public ApiViewHolder(@NonNull View itemView) {
             super(itemView);
-            textTipoHabitacion = itemView.findViewById(R.id.text_TipoHabitacion);
-            textTemporada = itemView.findViewById(R.id.textTemporada);
-            textNombreCliente = itemView.findViewById(R.id.textNombre_Cliente);
-            textDiasOcupacion = itemView.findViewById(R.id.textDias_ocupacion);
-            textTitle = itemView.findViewById(R.id.textTitle);
+            textMetodoReservacion = itemView.findViewById(R.id.textMetodoReservacion);
+            textNombreCliente = itemView.findViewById(R.id.textNombre_Clientes3);
+            txtNumMes = itemView.findViewById(R.id.textNumMes);
+            txtPrecioNoche = itemView.findViewById(R.id.textPrecioNoche);
+            textPrecioPaquete = itemView.findViewById(R.id.textPrecioPaquete);
         }
     }
 
@@ -50,18 +50,18 @@ public class ApiAdapterConsult3 extends RecyclerView.Adapter<ApiAdapterConsult3.
     @Override
     public void onBindViewHolder(@NonNull ApiViewHolder holder, int position) {
         // Obtener el elemento de la lista en la posición actual y reemplazar el contenido de la vista
-        DatosHotel currentItem = datosHotelList.get(position);
+        Apiconsulta3 currentItem = datalist3.get(position);
 
-        holder.textTipoHabitacion.setText("Tipo de Habitación: " + currentItem.getTipo_habitacion());
-        holder.textTemporada.setText("Temporada: " + currentItem.getTemporada());
-        holder.textNombreCliente.setText("Nombre del Cliente: " + currentItem.getNombre_cliente());
-        holder.textDiasOcupacion.setText("Días de Ocupación: " + currentItem.getDias_ocupacion());
-        holder.textTitle.setText("Hotel Playa Paradise");
+        holder.textMetodoReservacion.setText("Tipo de Habitación: " + currentItem.getMetodoreservacion());
+        holder.textNombreCliente.setText("Temporada: " + currentItem.getNombreClientes());
+        holder.txtNumMes.setText("Nombre del Cliente: " + currentItem.getNummes());
+        holder.txtPrecioNoche.setText("Días de Ocupación: " + currentItem.getPrecionoche());
+        holder.textPrecioPaquete.setText("Días de Ocupación: " + currentItem.getPreciopaquete());
     }
 
     // Devuelve el tamaño de tu dataset (invocado por el layout manager)
     @Override
     public int getItemCount() {
-        return datosHotelList.size();
+        return datalist3.size();
     }
 }

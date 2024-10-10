@@ -36,7 +36,7 @@ class Consulta3 : Fragment() {
     private val binding get() = _binding!!
 
     // Lista de datos para el RecyclerView
-    private val dataList = mutableListOf<DatosHotel>()
+    private val dataList3 = mutableListOf<Apiconsulta3>()
 
     // Adapter para RecyclerView
     private lateinit var adapter: ApiAdapterConsult3
@@ -62,18 +62,18 @@ class Consulta3 : Fragment() {
         setupRecyclerView()
 
         // Hacer la solicitud a la API al hacer clic en el botón
-        binding.ObtenerDatos.setOnClickListener {
+
             fetchDataFromApi()
-        }
+
 
         return view
     }//final del view
 
     private fun setupRecyclerView() {
         // Inicializamos el adaptador y configuramos el RecyclerView
-        adapter = ApiAdapterConsult3(dataList)  // Usa tu lista global
-        binding.recyclerViewConsulta3.layoutManager = LinearLayoutManager(context)
-        binding.recyclerViewConsulta3.adapter = adapter
+        adapter = ApiAdapterConsult3(dataList3)  // Usa tu lista global
+        binding.recyclerViewConsult3.layoutManager = LinearLayoutManager(context)
+        binding.recyclerViewConsult3.adapter = adapter
 
     }
 
@@ -98,11 +98,11 @@ class Consulta3 : Fragment() {
                     // Usamos Gson para convertir el JSON en una lista de ApiResponse
                     try {
                         val gson = Gson()
-                        val apiResponseList = gson.fromJson(data, Array<DatosHotel>::class.java).toList()
+                        val apiResponseList = gson.fromJson(data, Array<Apiconsulta3>::class.java).toList()
 
                         // Limpiamos la lista y añadimos los nuevos datos
-                        dataList.clear()
-                        dataList.addAll(apiResponseList)
+                        dataList3.clear()
+                        dataList3.addAll(apiResponseList)
 
                         // Notificamos al adaptador que los datos han cambiado
                         adapter.notifyDataSetChanged()

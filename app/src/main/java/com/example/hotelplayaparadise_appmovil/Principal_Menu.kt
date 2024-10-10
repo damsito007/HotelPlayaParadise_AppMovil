@@ -21,6 +21,12 @@ class Principal_Menu : AppCompatActivity() {
         binding = ActivityPrincipalMenuBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        if (savedInstanceState == null) {
+            supportFragmentManager.beginTransaction()
+                .replace(R.id.fragment_container, WelcomeFragment())
+                .commit()
+        }
+
         // Configurar el botón para abrir el menú lateral
         binding.menuButton.setOnClickListener {
             binding.drawerLayout.openDrawer(GravityCompat.START)
@@ -32,6 +38,12 @@ class Principal_Menu : AppCompatActivity() {
 
                 R.id.consulta1 -> {
                     loadFragment(Consulta1()) // Cargar Consulta1Fragment
+                }
+                R.id.consulta2 -> {
+                    loadFragment(Consulta2()) // Cargar Consulta2Fragment
+                }
+                R.id.consulta3-> {
+                    loadFragment(Consulta3()) // Cargar Consulta3Fragment
                 }
             }
             binding.drawerLayout.closeDrawer(GravityCompat.START) // Cerrar el menú

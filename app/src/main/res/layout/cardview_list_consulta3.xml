@@ -5,24 +5,10 @@
     android:layout_margin="8dp"
     android:elevation="4dp">
 
-
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical">
-
-
-        <TextView
-            android:id="@+id/textTitle"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Hotel Paradise"
-            android:textStyle="bold"
-            android:textSize="24sp"
-            android:fontFamily="serif"
-            android:textColor="@color/colorPrimaryDark"
-            android:layout_marginBottom="12dp"/>
-
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -30,78 +16,81 @@
             android:orientation="horizontal"
             android:weightSum="2">
 
-
             <LinearLayout
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:orientation="horizontal">
-
-                <ImageView
-                    android:layout_width="24dp"
-                    android:layout_height="24dp"
-                    android:src="@drawable/ic_hotel_room"
-                    android:layout_marginEnd="8dp"
-                    android:contentDescription="Icono de habitación" />
-
-                <TextView
-                    android:id="@+id/text_TipoHabitacion"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Tipo de Habitación: Doble"
-                    android:textSize="16sp"
-                    android:textColor="@color/colorSecondary"
-                    android:fontFamily="sans-serif-light"
-                    android:layout_marginBottom="6dp"/>
             </LinearLayout>
 
-
             <LinearLayout
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:orientation="horizontal">
-
-                <ImageView
-                    android:layout_width="24dp"
-                    android:layout_height="24dp"
-                    android:src="@drawable/ic_season"
-                    android:layout_marginEnd="8dp"
-                    android:contentDescription="Icono de temporada" />
-
-                <TextView
-                    android:id="@+id/textTemporada"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Temporada: Invierno"
-                    android:textSize="16sp"
-                    android:textColor="@color/colorSecondary"
-                    android:fontFamily="sans-serif-light"
-                    android:layout_marginBottom="6dp"/>
             </LinearLayout>
         </LinearLayout>
 
-
         <TextView
-            android:id="@+id/textNombre_Cliente"
+            android:id="@+id/textMetodoReservacion"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Cliente: Abdul"
+            android:text="Método de Reservación: Agencia NicTravel"
             android:textSize="16sp"
             android:textColor="@color/colorPrimary"
             android:fontFamily="sans-serif"
-            android:layout_marginTop="8dp"/>
-
+            android:layout_marginTop="8dp"
+            android:drawableStart="@drawable/baseline_apartment_24"
+            android:drawablePadding="8dp" />
 
         <TextView
-            android:id="@+id/textDias_ocupacion"
+            android:id="@+id/textNombre_Clientes3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Días de ocupación: 178"
+            android:text="Nombre del Cliente: Itachi"
             android:textSize="16sp"
             android:textColor="@color/colorPrimary"
             android:fontFamily="sans-serif"
-            android:layout_marginTop="4dp"/>
+            android:layout_marginTop="4dp"
+            android:drawableStart="@drawable/baseline_person_24"
+            android:drawablePadding="8dp" />
+
+        <TextView
+            android:id="@+id/textNumMes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Número del Mes: 5"
+            android:textSize="16sp"
+            android:textColor="@color/colorPrimary"
+            android:fontFamily="sans-serif"
+            android:layout_marginTop="4dp"
+            android:drawableStart="@drawable/baseline_calendar_month_24"
+            android:drawablePadding="8dp" />
+
+        <TextView
+            android:id="@+id/textPrecioNoche"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Precio por Noche: 650"
+            android:textSize="16sp"
+            android:textColor="@color/colorPrimary"
+            android:fontFamily="sans-serif"
+            android:layout_marginTop="4dp"
+            android:drawableStart="@drawable/baseline_attach_money_24"
+            android:drawablePadding="8dp" />
+
+        <TextView
+            android:id="@+id/textPrecioPaquete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Precio por Paquete: 460"
+            android:textSize="16sp"
+            android:textColor="@color/colorPrimary"
+            android:fontFamily="sans-serif"
+            android:layout_marginTop="4dp"
+            android:drawableStart="@drawable/baseline_attach_money_24"
+            android:drawablePadding="8dp" />
+
     </LinearLayout>
 
 </androidx.cardview.widget.CardView>
