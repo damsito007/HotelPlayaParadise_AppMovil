@@ -28,8 +28,8 @@ public class ApiAdapterConsult2 extends RecyclerView.Adapter<ApiAdapterConsult2.
         public ApiViewHolder(@NonNull View itemView) {
             super(itemView);
 
-            NombreCliente = itemView.findViewById(R.id.textNombre_Cliente);
-            DiasOcupacion = itemView.findViewById(R.id.textDias_ocupacion);
+            NombreCliente = itemView.findViewById(R.id.textNombre_Cliente2);
+            DiasOcupacion = itemView.findViewById(R.id.textDias_ocupacion2);
         }
     }
 
@@ -39,7 +39,7 @@ public class ApiAdapterConsult2 extends RecyclerView.Adapter<ApiAdapterConsult2.
     public ApiViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         // Inflamos el layout del ítem
         View itemView = LayoutInflater.from(parent.getContext())
-                .inflate(R.layout.item_recyclerview_consult1, parent, false);
+                .inflate(R.layout.item_recyclerview_consult2, parent, false);
         return new ApiViewHolder(itemView);
     }
 

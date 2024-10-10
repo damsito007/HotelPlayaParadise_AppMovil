@@ -78,11 +78,17 @@ class Consulta3 : Fragment() {
     }
 
     private fun fetchDataFromApi() {
+        // Muestra el ProgressBar
+        binding.progressBarConsult3.visibility = View.VISIBLE
+
         // URL de la API
-        val url = "https://0fdkzrqz-5069.use.devtunnels.ms/diasOcupacion_Habitaciones_x_Temporada_and_clientes"
+        val url = "https://0fdkzrqz-5069.use.devtunnels.ms/consulta_precios"
 
         // Hacemos la petición GET usando Fuel
         Fuel.get(url).responseString { _, _, result ->
+            // Oculta el ProgressBar al finalizar la solicitud
+            binding.progressBarConsult3.visibility = View.GONE
+
             when (result) {
                 is Result.Failure -> {
                     // Manejar errores en la petición
@@ -116,7 +122,8 @@ class Consulta3 : Fragment() {
                 }
             }
         }
-    }//fin de la funcion
+    }
+
 
     companion object {
         /**

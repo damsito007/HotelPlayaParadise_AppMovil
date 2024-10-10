@@ -52,11 +52,11 @@ public class ApiAdapterConsult3 extends RecyclerView.Adapter<ApiAdapterConsult3.
         // Obtener el elemento de la lista en la posición actual y reemplazar el contenido de la vista
         Apiconsulta3 currentItem = datalist3.get(position);
 
-        holder.textMetodoReservacion.setText("Tipo de Habitación: " + currentItem.getMetodoreservacion());
-        holder.textNombreCliente.setText("Temporada: " + currentItem.getNombreClientes());
-        holder.txtNumMes.setText("Nombre del Cliente: " + currentItem.getNummes());
-        holder.txtPrecioNoche.setText("Días de Ocupación: " + currentItem.getPrecionoche());
-        holder.textPrecioPaquete.setText("Días de Ocupación: " + currentItem.getPreciopaquete());
+        holder.textMetodoReservacion.setText("Tipo de Reservación: " + currentItem.getMetodoreservacion());
+        holder.textNombreCliente.setText("Nombre del Cliente: " + currentItem.getNombreClientes());
+        holder.txtNumMes.setText("Número del Mes: " + currentItem.getNummes());
+        holder.txtPrecioNoche.setText("Precio por Noche: " + currentItem.getPrecionoche());
+        holder.textPrecioPaquete.setText("Precio por Paquete: " + currentItem.getPreciopaquete());
     }
 
     // Devuelve el tamaño de tu dataset (invocado por el layout manager)

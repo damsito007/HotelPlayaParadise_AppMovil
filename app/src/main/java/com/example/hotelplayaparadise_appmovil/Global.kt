@@ -30,7 +30,7 @@ var datalist2: MutableList<Apiconsulta2> = mutableListOf()
 data class Apiconsulta3(
     @SerializedName("Metodo Reservacion") val metodoreservacion: String,
     @SerializedName("Nombre Clientes") val nombreClientes: String,
-    @SerializedName("Num Mes") val nummes: String,
+    @SerializedName("Num Mes") val nummes: Int,
     @SerializedName("Precio Noche") val precionoche: Double,
     @SerializedName("Precio Paquete") val preciopaquete: Double
 )
